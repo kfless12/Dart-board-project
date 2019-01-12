@@ -5,6 +5,8 @@ player1 = {"total_score": 0, 20: 1, 19: 0, 18: 0, 17: 0, 16: 0, 15: 0, 25: 0}
 player2 = {"total_score": 0, 20: 0, 19: 0, 18: 0, 17: 0, 16: 0, 15: 0, 25: 0}
 player3 = {"total_score": 0, 20: 0, 19: 0, 18: 0, 17: 0, 16: 0, 15: 0, 25: 0}
 player4 = {"total_score": 0, 20: 0, 19: 0, 18: 0, 17: 0, 16: 0, 15: 0, 25: 0}
+players = [player1, player2, player3, player4]
+
 
 #function that calculates the score for each dart
 def single_dart_score(multiplier, number):
@@ -38,9 +40,13 @@ def check_if_closed(playernum, multi, num):
             if playernum[num] == 3 and multi > 0:
                 print(multi)
                 return single_dart_score(multi, num)
-        
 
 
-            
-print(check_if_closed(player1, 3, 20))
-
+def check_if_oth_closed(player, num, multi):
+    for play in players:
+        if play == player:
+            continue
+        elif play[num] == 3:
+            return True
+        else:
+            return False
