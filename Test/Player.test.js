@@ -14,4 +14,13 @@ describe("Testing the Player Method of", () => {
 
 		expect(player1.playerScore()).toBe(20);
 	});
+	test("Player1 should accept an object as thrown dart", () => {
+		expect(player1.throwDart({ 25: 2 }));
+	});
+	test("Player1 should fail if the format is not correct", () => {
+		expect(() => player1.throwDart("error")).toThrow("input is invalid");
+	});
+	test("Player1 should have thrown a dart", () => {
+		expect(player1.getPrevDart()).toStrictEqual({ 25: 2 });
+	});
 });
