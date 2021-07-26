@@ -1,26 +1,28 @@
 {
-  "name": "dart-board-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kfless12/Dart-board-project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kfless12/Dart-board-project/issues"
-  },
-  "homepage": "https://github.com/kfless12/Dart-board-project#readme",
-  "devDependencies": {
-    "jest": "^27.0.6"
-  },
-  "dependencies": {
-    "ts-node": "^10.1.0"
-  }
+	"name": "dart-board-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"start": "node ./Backend/Server/Start.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kfless12/Dart-board-project.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kfless12/Dart-board-project/issues"
+	},
+	"homepage": "https://github.com/kfless12/Dart-board-project#readme",
+	"devDependencies": {
+		"jest": "^27.0.6"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"ts-node": "^10.1.0"
+	}
 }

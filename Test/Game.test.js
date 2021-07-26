@@ -1,5 +1,5 @@
-const Player = require("../Player/Index.js");
-const Game = require("../Game/Game.js");
+const Player = require("../BackEnd/Player/Index.js");
+const Game = require("../BackEnd/Game/Game.js");
 
 describe("Testing the game module", () => {
 	let player1 = new Player("Kevin");

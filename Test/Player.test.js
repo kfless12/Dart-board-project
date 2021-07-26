@@ -1,4 +1,4 @@
-const Player = require("../Player/Index.js");
+const Player = require("../BackEnd/Player/Index.js");
 
 describe("Testing the Player Method of", () => {
 	let player1 = new Player("Player1");
